@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+  <style>
+    body {
+    	width: 100wh;
+    	height: 90vh;
+    	color: #fff;
+    	background: linear-gradient(-45deg, #4B88A2, #92BCEA, #AFB3F7, #BCD2EE);
+    	background-size: 400% 400%;
+    	-webkit-animation: Gradient 15s ease infinite;
+    	-moz-animation: Gradient 15s ease infinite;
+    	animation: Gradient 15s ease infinite;
+      }
+
+    @-webkit-keyframes Gradient {
+    	0% {
+    		background-position: 0% 50%
+    	}
+    	50% {
+    		background-position: 100% 50%
+    	}
+    	100% {
+    		background-position: 0% 50%
+    	}
+    }
+
+    @-moz-keyframes Gradient {
+    	0% {
+    		background-position: 0% 50%
+    	}
+    	50% {
+    		background-position: 100% 50%
+    	}
+    	100% {
+    		background-position: 0% 50%
+    	}
+    }
+
+    @keyframes Gradient {
+    	0% {
+    		background-position: 0% 50%
+    	}
+    	50% {
+    		background-position: 100% 50%
+    	}
+    	100% {
+    		background-position: 0% 50%
+    	}
+    }
+  </style>
+</head>
+
+<body>
+
+</body>
+
+
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+#button2 {
+ float: right;
+ margin-top: -30px;
+ margin-right: 50px;
+}
+.list {
+  margin-left: 400px;
+}
+</style>
+
+<body>
+<% if @location == "New York" %>
+    <center><h1><b>New York</b></h1></center>
+     <% sights = new_york %>
+     <% sights.each do |place, description| %>
+       <ul>
+         <li><b><%=place%></b>: <dd><%=description%></dd></li>
+       </ul>
+     <%end%>
+        <center><h2><b>Top-rated Restaurants of New York</b></h2></center>
+     <p>
+       <ul>
+         <li>
+          <b> Wildair</b> <dd>An offstoot of the Contra restaurant, serving sophisticated American food!</dd>
+         </li>
+         <li>
+          <b>Spicy Village</b> <dd>A quaint chinese cafe serving henan foods, like hand-pulled noodles, pork pankcakes, and spicy chicken!</dd>
+         </li>
+         <li>
+         <b>Los Tacos</b> <dd>Come to this bustling street-style taqueria serving tacos, quesadillas, and agua frescas!</dd>
+         </li>
+         <li>
+         <b>Patsy's</b> <dd> A vintage Neapolitan eatery near Carnegie Hall, with a history of entertaining high-profile patrons!</dd>
+         </li>
+         <li>
+          <b>Veselka</b> <dd>Come to this no-frills Ukrainian, open 24 hours, to enjoy delcious Ukrainian cuisine, such as Borscht and Pierogi!</dd>
+         </li>
+       </ul>
+     </p>
+     <% if @weather == "Summer" %>
+       <center><b><h2>New York Summer Packing List</h2></b></center>
+
+       <div class = "list">
+         <% var =  ny_summer%>
+       <% var.each do |clothes| %>
+         <ul>
+           <li><%=clothes%></li>
+         </ul>
+       <%end%>
+       </div>
+     <% elsif @weather == "Winter" %>
+     <center><b><h2>New York Winter Packing List</h2></b></center>
+      <div class = "list">
+      <% vari =  ny_winter%>
+      <% vari.each do |clothes| %>
+      <ul>
+       <li><%=clothes%></li>
+      </ul>
+     <%end%>
+    <%end%>
+    </div>
+    <div id = "button2">
+     <form method= "get" action="/">
+    <p><input type= "submit" value= "Start Over"></p>
+    </form>
+    </div>
+    <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/07/05/thumb-img/1499272472134247335.jpg">
+    <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/05/19/thumb-img/1495150618793452853.jpg">
+    <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/06/02/thumb-img/1514416191121760461.jpg">
+    <img src= "https://images2.nike.com/is/image/DotCom/PHN_PS/M7652_000_E_PREM/converse-chuck-taylor-all-star-low-top-unisex-shoe.png?fmt=png-alpha">
+    <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2018/05/17/thumb-img/1528675439089624530.jpg">
+    <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/09/16/thumb-img/1505666988662594852.jpg">
+    <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/10/11/thumb-img/1507682749486127257.png">
+    <img src= "https://ladyincharge.files.wordpress.com/2013/10/cole-haan-dover-riding-boot.png">
+    <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/10/17/thumb-img/1508259642319539352.jpg">
+    <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/09/20/thumb-img/1505864482180285562.jpg">
+<% elsif @location == "Miami" %>
+    <center><h1><b>Miami</b></h1></center>
+    <% sights = miami %>
+    <% sights.each do |place, description| %>
+      <ul>
+        <li><b><%=place%></b>: <dd><%=description%></dd></li>
+      </ul>
+    <%end%>
+   <center><h2><b>Top-rated Restaurants of Miami</b></h2></center>
+     <p>
+       <ul>
+         <li>
+          <b> Pubbelly Noodle Bar</b> <dd>Come to this exposed-brick gastropub with Asian-fusion tapas featuring pork paired with craft beer and wine!</dd>
+         </li>
+         <li>
+          <b>Micheal's Genuine Food and Drink</b> <dd>A new American eatery with locally sourced foods and inventive deserts!</dd>
+         </li>
+         <li>
+         <b>Zuma</b> <dd>Come to this chic and minimalist Japanese hot spot overlooking the Miami River and enjoy shared dishes, sushi and more!</dd>
+         </li>
+         <li>
+         <b>Joe's Stone Crab</b> <dd>This Cavernous bustling space is exclusively open between October and May, with crowds drawing in to eat some delicious crab and key-lime pie!</dd>
+         </li>
+         <li>
+          <b>Alter</b> <dd>Refined new American foods served in an open industrial setting with an open kitchen and a lovely garden!</dd>
+         </li>
+       </ul>
+     </p>
+    <% if @weather == "Summer" %>
+      <center><b><h2>Miami Summer Packing List</h2></b></center>
+      <div class = "list">
+      <% varia =  mi_summer%>
+      <% varia.each do |shirt| %>
+        <ul>
+          <li><%=shirt%></li>
+        </ul>
+      <%end%>
+      </div>
+     <% elsif @weather == "Winter" %>
+      <center><b><h2>Miami Winter Packing List</h2></b></center>
+       <div class = "list">
+       <% variab =  mi_winter%>
+       <% variab.each do |shirt| %>
+         <ul>
+           <li><%=shirt%></li>
+         </ul>
+
+       <%end%>
+     <%end%>
+     </div>
+     <div id = "button2">
+      <form method= "get" action="/">
+    <p><input type= "submit" value= "Start Over"></p>
+    </form>
+    </div>
+    <img src= "https://i1.wp.com/luxuryreporter.ng/wp-content/uploads/2016/06/Soludos.png?fit=450%2C450">
+    <img src= "https://www.rei.com/media/product/108904">
+    <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/06/03/thumb-img/1496689429560874067.jpg">
+    <img src= "https://gloimg.rglcdn.com/rosegal/pdm-product-pic/Clothing/2017/06/23/gmc-ad-img/1498180682174798903.png">
+    <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/12/13/thumb-img/1513136916257183734.jpg">
+    <img src= "https://images.footlocker.com/pi/77153/zoom/adidas-originals-superstar-womens">
+<% elsif @location == "Los Angeles" %>
+  <center><h1><b>Los Angeles</b></h1></center>
+  <% sights = los_angeles %>
+  <% sights.each do |place, description| %>
+    <ul>
+      <li><b><%=place%></b>: <dd><%=description%></dd></li>
+    </ul>
+  <%end%>
+   <center><h2><b>Top-rated Restaurants of Los Angeles</b></h2></center>
+     <p>
+       <ul>
+         <li>
+          <b> Langer's Deli and Restaurant</b> <dd>Old-fashioned deli serving up traditional comfort foods like hot pastrami sandwiches, since 1947!</dd>
+         </li>
+         <li>
+          <b>Humble Potato</b> <dd>Comtemporary Japenese-American fusion eatery serving burgers, hot-dogs, sandwiches, sake, and more!</dd>
+         </li>
+         <li>
+         <b>Pizzana</b> <dd>Come to Sprinkles Cupcakes' savory ventury to enjoy thin-crusted pizzas and salads inspired by California Produce!</dd>
+         </li>
+         <li>
+         <b>Eat</b> <dd> A quaint cafe with the best omelets, breakfast pastas, pankcakes, sandwiches, burgers, and chilaquiles!</dd>
+         </li>
+         <li>
+          <b>Pizzeria Mozza</b> <dd>Come here to see Chef Nancy Silverton turn out acclaimed wood-burning Pizzas and antipasti in busy digs!</dd>
+         </li>
+       </ul>
+     </p>
+  <% if @weather == "Summer" %>
+  <center>
+    <b><h2>Los Angeles Summer Packing List</h2></b>
+    </center>
+    <div class = "list">
+    <% varia =  la_summer%>
+    <% varia.each do |shirt| %>
+      <ul>
+        <li><%=shirt%></li>
+      </ul>
+    <%end%>
+    </div>
+  <% elsif @weather == "Winter" %>
+   <center><b><h2>Los Angeles Winter Packing List</h2></b></center>
+    <div class = "list">
+    <% variab =  la_winter%>
+    <% variab.each do |shirt| %>
+      <ul>
+        <li><%=shirt%></li>
+      </ul>
+    <%end%>
+    <!--<form method= "get" action="/">-->
+    <!--<p><input type= "submit" value= "Start Over"></p>-->
+    <!--</form>-->
+  <%end%>
+  </div>
+   <div id = "button2">
+     <form method= "get" action="/">
+     <p><input type= "submit" value= "Start Over"></p>
+    </form>
+    </div>
+  <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2018/01/10/thumb-img/1523390706819688969.jpg">
+   <img src= "https://cdn.shopify.com/s/files/1/2109/0441/products/aphroditerattan_300x300.png?v=1527378783">
+   <img src= "http://www.ibirks.com/images/welcome-/shape_pic4.png">
+   <img src= "https://gloimg.rglcdn.com/rosegal/pdm-product-pic/Clothing/2017/04/18/gmc-ad-img/1493683984810233871.png">
+   <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2018/04/17/thumb-img/1526337985913215831.jpg">
+   <img src= "https://images2.nike.com/is/image/DotCom/PHN_PS/M7650_102_E_PREM/converse-chuck-taylor-all-star-high-top-unisex-shoe.png?fmt=png-alpha">
+   <img src= "https://s7d9.scene7.com/is/image/Lenscrafters/805289602057_shad_fr?$pngalpha$&wid=300&defaultimage=805289602057_shad_qt">
+   <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/11/24/thumb-img/1511484774731061162.jpg">
+<% elsif @location == "Atlanta" %>
+  <center><h1><b>Atlanta</b></h1></center>
+  <% sights = atlanta %>
+  <% sights.each do |place, description| %>
+    <ul>
+      <li><b><%=place%></b>: <dd><%=description%></dd></li>
+    </ul>
+  <%end%>
+  <center><h2><b>Top-rated Restaurants of Atlanta</b></h2></center>
+     <p>
+       <ul>
+         <li>
+          <b> Seven Lamps</b> <dd>Handmade Pastas, Craft Cocktails, and a Beautiful Courtyard to enjoy it on!</dd>
+         </li>
+         <li>
+          <b>Bone's</b> <dd>For an amazing meal of prime rib and seafood!</dd>
+         </li>
+         <li>
+         <b>Magianno's Little Italy </b> <dd>Come to this semi-upscale chain for classic Italian fare, served family-style!</dd>
+         </li>
+         <li>
+         <b>Del Frisco's Grille</b> <dd> A Sophisticated chophouse chain serving delcious steak, seafood, sandwiches, and cocktails!</dd>
+         </li>
+         <li>
+          <b>Chops</b> <dd>Come here for an amazing meal of prime aged rib and fresh seafood!</dd>
+         </li>
+       </ul>
+     </p>
+
+  <% if @weather == "Summer" %>
+    <center><h2><b>Atlanta Summer Packing List</b></h2></center>
+    <div class = "list">
+    <% varia =  atl_summer%>
+    <% varia.each do |shirt| %>
+      <ul>
+        <li><%=shirt%></li>
+      </ul>
+    <%end%>
+ </div>
+  <% elsif @weather == "Winter" %>
+    <center><h2><b>Atlanta Winter Packing List</b></h2></center>
+   <div class = "list">
+    <% variab =  atl_winter%>
+    <% variab.each do |shirt| %>
+      <ul>
+        <li><%=shirt%></li>
+      </ul>
+    <%end%>
+  <%end%>
+  </div>
+  <div id = "button2">
+     <form method= "get" action="/">
+    <p><input type= "submit" value= "Start Over"></p>
+    </form>
+  </div>
+  <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/04/18/thumb-img/1497814008178782370.jpg">
+  <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/07/04/thumb-img/1499123196114459823.jpg">
+  <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/06/02/thumb-img/1517187950582493595.jpg">
+  <img src= "https://www.superga.co.uk/uploads/images/categories/smaller/1496403090rope.png">
+  <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/10/27/thumb-img/1510883627595011008.jpg">
+  <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/09/18/thumb-img/1505935797484729301.jpg">
+  <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2017/08/11/thumb-img/1502405236494894614.jpg">
+  <img src= "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2016/12/21/thumb-img/1482262021534235019.jpg">
+<%end%>
+</body>
